@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/goodbarkaraoke/static/css/main.9dc0cdf3.chunk.css",
-    "main.js": "/goodbarkaraoke/static/js/main.862b7522.chunk.js",
-    "main.js.map": "/goodbarkaraoke/static/js/main.862b7522.chunk.js.map",
+    "main.css": "/goodbarkaraoke/static/css/main.64cb0c08.chunk.css",
+    "main.js": "/goodbarkaraoke/static/js/main.0eaafc26.chunk.js",
+    "main.js.map": "/goodbarkaraoke/static/js/main.0eaafc26.chunk.js.map",
     "runtime-main.js": "/goodbarkaraoke/static/js/runtime-main.9aa93a17.js",
     "runtime-main.js.map": "/goodbarkaraoke/static/js/runtime-main.9aa93a17.js.map",
     "static/js/2.d00acec6.chunk.js": "/goodbarkaraoke/static/js/2.d00acec6.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.bf196a52.chunk.js": "/goodbarkaraoke/static/js/3.bf196a52.chunk.js",
     "static/js/3.bf196a52.chunk.js.map": "/goodbarkaraoke/static/js/3.bf196a52.chunk.js.map",
     "index.html": "/goodbarkaraoke/index.html",
-    "static/css/main.9dc0cdf3.chunk.css.map": "/goodbarkaraoke/static/css/main.9dc0cdf3.chunk.css.map",
+    "static/css/main.64cb0c08.chunk.css.map": "/goodbarkaraoke/static/css/main.64cb0c08.chunk.css.map",
     "static/js/2.d00acec6.chunk.js.LICENSE.txt": "/goodbarkaraoke/static/js/2.d00acec6.chunk.js.LICENSE.txt",
     "static/media/logo.001e1f8b.jpg": "/goodbarkaraoke/static/media/logo.001e1f8b.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.9aa93a17.js",
     "static/js/2.d00acec6.chunk.js",
-    "static/css/main.9dc0cdf3.chunk.css",
-    "static/js/main.862b7522.chunk.js"
+    "static/css/main.64cb0c08.chunk.css",
+    "static/js/main.0eaafc26.chunk.js"
   ]
 }
