@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/goodbarkaraoke/static/css/main.5ea45a40.chunk.css",
-    "main.js": "/goodbarkaraoke/static/js/main.d29e54a7.chunk.js",
-    "main.js.map": "/goodbarkaraoke/static/js/main.d29e54a7.chunk.js.map",
-    "runtime-main.js": "/goodbarkaraoke/static/js/runtime-main.9aa93a17.js",
-    "runtime-main.js.map": "/goodbarkaraoke/static/js/runtime-main.9aa93a17.js.map",
-    "static/js/2.d00acec6.chunk.js": "/goodbarkaraoke/static/js/2.d00acec6.chunk.js",
-    "static/js/2.d00acec6.chunk.js.map": "/goodbarkaraoke/static/js/2.d00acec6.chunk.js.map",
-    "static/js/3.bf196a52.chunk.js": "/goodbarkaraoke/static/js/3.bf196a52.chunk.js",
-    "static/js/3.bf196a52.chunk.js.map": "/goodbarkaraoke/static/js/3.bf196a52.chunk.js.map",
-    "index.html": "/goodbarkaraoke/index.html",
-    "static/css/main.5ea45a40.chunk.css.map": "/goodbarkaraoke/static/css/main.5ea45a40.chunk.css.map",
-    "static/js/2.d00acec6.chunk.js.LICENSE.txt": "/goodbarkaraoke/static/js/2.d00acec6.chunk.js.LICENSE.txt",
-    "static/media/logo.001e1f8b.jpg": "/goodbarkaraoke/static/media/logo.001e1f8b.jpg"
+    "main.css": "/adkaraokegit%20init/static/css/main.1a45e895.chunk.css",
+    "main.js": "/adkaraokegit%20init/static/js/main.f26ee63c.chunk.js",
+    "main.js.map": "/adkaraokegit%20init/static/js/main.f26ee63c.chunk.js.map",
+    "runtime-main.js": "/adkaraokegit%20init/static/js/runtime-main.a629a625.js",
+    "runtime-main.js.map": "/adkaraokegit%20init/static/js/runtime-main.a629a625.js.map",
+    "static/js/2.3f881a3f.chunk.js": "/adkaraokegit%20init/static/js/2.3f881a3f.chunk.js",
+    "static/js/2.3f881a3f.chunk.js.map": "/adkaraokegit%20init/static/js/2.3f881a3f.chunk.js.map",
+    "static/js/3.bf196a52.chunk.js": "/adkaraokegit%20init/static/js/3.bf196a52.chunk.js",
+    "static/js/3.bf196a52.chunk.js.map": "/adkaraokegit%20init/static/js/3.bf196a52.chunk.js.map",
+    "index.html": "/adkaraokegit%20init/index.html",
+    "static/css/main.1a45e895.chunk.css.map": "/adkaraokegit%20init/static/css/main.1a45e895.chunk.css.map",
+    "static/js/2.3f881a3f.chunk.js.LICENSE.txt": "/adkaraokegit%20init/static/js/2.3f881a3f.chunk.js.LICENSE.txt",
+    "static/media/logo.001e1f8b.jpg": "/adkaraokegit%20init/static/media/logo.001e1f8b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9aa93a17.js",
-    "static/js/2.d00acec6.chunk.js",
-    "static/css/main.5ea45a40.chunk.css",
-    "static/js/main.d29e54a7.chunk.js"
+    "static/js/runtime-main.a629a625.js",
+    "static/js/2.3f881a3f.chunk.js",
+    "static/css/main.1a45e895.chunk.css",
+    "static/js/main.f26ee63c.chunk.js"
   ]
 }
