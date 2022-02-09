@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/goodbarkaraoke/static/css/main.64cb0c08.chunk.css",
-    "main.js": "/goodbarkaraoke/static/js/main.6cf03cd8.chunk.js",
-    "main.js.map": "/goodbarkaraoke/static/js/main.6cf03cd8.chunk.js.map",
+    "main.js": "/goodbarkaraoke/static/js/main.7345dcf8.chunk.js",
+    "main.js.map": "/goodbarkaraoke/static/js/main.7345dcf8.chunk.js.map",
     "runtime-main.js": "/goodbarkaraoke/static/js/runtime-main.9aa93a17.js",
     "runtime-main.js.map": "/goodbarkaraoke/static/js/runtime-main.9aa93a17.js.map",
     "static/js/2.d00acec6.chunk.js": "/goodbarkaraoke/static/js/2.d00acec6.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.9aa93a17.js",
     "static/js/2.d00acec6.chunk.js",
     "static/css/main.64cb0c08.chunk.css",
-    "static/js/main.6cf03cd8.chunk.js"
+    "static/js/main.7345dcf8.chunk.js"
   ]
 }
