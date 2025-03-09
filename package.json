@@ -9,17 +9,17 @@
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^11.4.0",
-    "react": "^19.0.0",
+    "react": "^18.2.0",
     "react-copy-to-clipboard": "^5.1.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "react-switch": "^7.1.0",
     "web-vitals": "^2.1.4"
   },
-  "engines" : { 
-  "npm" : ">=8.0.0 <9.0.0",
-  "node" : ">=16.0.0 <22.0.0"
-},
+  "engines": {
+    "npm": ">=8.0.0 <9.0.0",
+    "node": ">=16.0.0 <22.0.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -27,12 +27,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -45,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-plugin-disable": "^2.0.3"
   }
 }
