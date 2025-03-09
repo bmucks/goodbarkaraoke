@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/goodbarkaraoke/static/css/main.36c5a983.css",
-    "main.js": "/goodbarkaraoke/static/js/main.095038b4.js",
+    "main.css": "/goodbarkaraoke/static/css/main.9afbfb5b.css",
+    "main.js": "/goodbarkaraoke/static/js/main.8ae87ccb.js",
     "static/js/453.7580d053.chunk.js": "/goodbarkaraoke/static/js/453.7580d053.chunk.js",
     "static/media/logo.jpg": "/goodbarkaraoke/static/media/logo.001e1f8bdbd9227a0480.jpg",
     "index.html": "/goodbarkaraoke/index.html",
-    "main.36c5a983.css.map": "/goodbarkaraoke/static/css/main.36c5a983.css.map",
-    "main.095038b4.js.map": "/goodbarkaraoke/static/js/main.095038b4.js.map",
+    "main.9afbfb5b.css.map": "/goodbarkaraoke/static/css/main.9afbfb5b.css.map",
+    "main.8ae87ccb.js.map": "/goodbarkaraoke/static/js/main.8ae87ccb.js.map",
     "453.7580d053.chunk.js.map": "/goodbarkaraoke/static/js/453.7580d053.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36c5a983.css",
-    "static/js/main.095038b4.js"
+    "static/css/main.9afbfb5b.css",
+    "static/js/main.8ae87ccb.js"
   ]
 }
