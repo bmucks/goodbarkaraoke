@@ -1,38 +1,135 @@
 .App {
   text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: #70c0e6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form {
+  margin: 20px;
+  background-color: rgb(0, 0, 0);
+  color: #70c0e6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input, textarea {
+  display: block;
+  margin: 10px auto;
+  padding: 25px;
+  width: 80%;
+  background-color: rgb(0, 0, 0);
+  color: #a0e1ff;
+  font-size: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  padding: 20px 20px;
+  margin: 10px;
+  background-color: rgb(136, 211, 255);
+  color: #010e14;
+
+}
+
+.request-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  position: relative; /* Add this */
+}
+.request-card button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(4, 48, 73, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: black;
+  color: #70c0e6;
+  padding: 150px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 600px;
+  position: relative;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.submit-request-button {
+  font-size: 2em;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.modal-content input {
+  background-color: rgb(255, 255, 255);
+  color: #010d13;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.keypad-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.password-input {
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.password-input input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 350px;
+}
+
+.keypad button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.keypad button:hover {
+  background-color: #ddd;
 }
