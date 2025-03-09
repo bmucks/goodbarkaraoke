@@ -6,7 +6,7 @@ import './/App.css';
 const App = () => {
   return (
     <div className="App">
-      <h1>Karaoke Request App</h1>
+      <h1>Goodbar Karaoke Request App</h1>
       <CustomerRequestForm />
       <DJRequestQueue />
     </div>

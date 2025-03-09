@@ -10,6 +10,10 @@ const DJRequestQueue = () => {
   const [copiedField, setCopiedField] = useState(null);
   const [password, setPassword] = useState('');
   const [isPasswordCorrect, setIsPasswordCorrect] = useState(false);
+  const [totalSongsInQueue, setTotalSongsInQueue] = useState(0);
+  const [totalSongsNotInQueue, setTotalSongsNotInQueue] = useState(0);
+  const [djNotes, setDjNotes] = useState('');
+ 
 
   useEffect(() => {
     if (isPasswordCorrect) {
@@ -20,7 +24,16 @@ const DJRequestQueue = () => {
         }));
         // Sort requests by timestamp in ascending order
         requestsData.sort((a, b) => a.timestamp?.toDate() - b.timestamp?.toDate());
-        setRequests(requestsData);
+        // Reverse the order of the requests
+        const reversedRequests = [...requestsData].reverse();
+        setRequests(reversedRequests);
+
+        // Calculate totals
+        const inQueueCount = requestsData.filter(request => !request.completed).length;
+        const notInQueueCount = requestsData.filter(request => request.completed).length;
+
+        setTotalSongsInQueue(inQueueCount);
+        setTotalSongsNotInQueue(notInQueueCount);
       });
 
       return () => unsubscribe();
@@ -58,6 +71,9 @@ const DJRequestQueue = () => {
     setPassword('');
   };
 
+
+
+
   if (!isPasswordCorrect) {
     return (
       <div className="keypad-container">
@@ -83,46 +99,68 @@ const DJRequestQueue = () => {
   }
 
   return (
-    <><div className="requests-container">
-          {requests.map((request, index) => (
-              <div key={request.id} className="request-card">
-                  <p>{index + 1}. <br></br>
-                      Name:   <CopyToClipboard text={`${request.customerName} ${request.lastNameInitial}`} onCopy={() => handleCopy(`name-${request.id}`)}>
-                          <span className={`copy-box ${copiedField === `name-${request.id}` ? 'copied' : ''}`}>
-                              {request.customerName} {request.lastNameInitial}
-                          </span>
-                      </CopyToClipboard>
-                  </p>
-                  <p>Artist Name:
-                      <CopyToClipboard text={request.artistName} onCopy={() => handleCopy(`artist-${request.id}`)}>
-                          <span className={`copy-box ${copiedField === `artist-${request.id}` ? 'copied' : ''}`}>
-                              {request.artistName}
-                          </span>
-                      </CopyToClipboard>
-                  </p>
-                  <p>Song Name:
-                      <CopyToClipboard text={request.songName} onCopy={() => handleCopy(`song-${request.id}`)}>
-                          <span className={`copy-box ${copiedField === `song-${request.id}` ? 'copied' : ''}`}>
-                              {request.songName}
-                          </span>
-                      </CopyToClipboard>
-                  </p>
-                  <p>DJ Notes: {request.djNotes}</p>
-                  <p> {new Date(request.timestamp?.toDate()).toLocaleString()}</p>
-                  <label>
-                      In Queue:
-                      <Switch
-                          onChange={() => handleToggleCompleted(request.id, request.completed)}
-                          checked={request.completed}
-                          onColor="#00FF00"
-                          offColor="#FF0000" />
-                  </label>
-                  <button onClick={() => handleDelete(request.id)}>Delete</button>
-              </div>
-          ))}
-      </div><div className="divide"></div><ol>
-              
-          </ol></>
+    <div style={{ display: 'flex' }}>
+      <div className="requests-container">
+        {requests.map((request, index) => (
+          <div key={request.id} className="request-card">
+            <p>#{requests.length - index} <br></br>
+              Name:   <CopyToClipboard text={`${request.customerName} ${request.lastNameInitial} ${request.additionalSingers && request.additionalSingers.length > 0 ? ', ' + request.additionalSingers.map(singer => `${singer.name} ${singer.lastName}`).join(', ') : ''}`} onCopy={() => handleCopy(`name-${request.id}`)}>
+                <span className={`copy-box ${copiedField === `name-${request.id}` ? 'copied' : ''}`}>
+                  {request.customerName} {request.lastNameInitial}
+                  {request.additionalSingers && request.additionalSingers.length > 0 && (
+                    `, ${request.additionalSingers.map(singer => `${singer.name} ${singer.lastName}`).join(', ')}`
+                  )}
+                </span>
+              </CopyToClipboard>
+            </p>
+            <p>Artist Name:
+              <CopyToClipboard text={request.artistName} onCopy={() => handleCopy(`artist-${request.id}`)}>
+                <span className={`copy-box ${copiedField === `artist-${request.id}` ? 'copied' : ''}`}>
+                  {request.artistName}
+                </span>
+              </CopyToClipboard>
+            </p>
+            <p>Song Name:
+              <CopyToClipboard text={request.songName} onCopy={() => handleCopy(`song-${request.id}`)}>
+                <span className={`copy-box ${copiedField === `song-${request.id}` ? 'copied' : ''}`}>
+                  {request.songName}
+                </span>
+              </CopyToClipboard>
+            </p>
+            <p>DJ Notes: {request.djNotes}</p>
+            <p> {new Date(request.timestamp?.toDate()).toLocaleString()}</p>
+            <label>
+              In Queue:
+              <Switch
+                onChange={() => handleToggleCompleted(request.id, request.completed)}
+                checked={request.completed}
+                onColor= "#00FF00"
+                offColor="#FF0000"  />
+            </label>
+            <button className="deleteCard" onClick={() => handleDelete(request.id)}>X</button>
+          </div>
+        ))}
+      </div>
+      <textarea
+        style={{
+          height: '1000px',
+          width: '400px',
+          marginLeft: '20px', // Add some spacing between the queue and the notes
+          fontSize: '20px',
+        }}
+        placeholder="Additional Notes"
+        value={djNotes}
+        onChange={(e) => setDjNotes(e.target.value)}
+      />
+      <div>
+        <p>Total Songs In Queue: {totalSongsNotInQueue}</p>
+        <p>Total Songs Not In Queue: {totalSongsInQueue}</p>
+ 
+      </div>
+      <div className="divide"></div><ol>
+
+      </ol>
+    </div>
   );
 };
 

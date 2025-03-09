@@ -4,8 +4,11 @@
   color: #70c0e6;
 }
 
+h1 {
+  margin: 0;
+}
 form {
-  margin: 20px;
+  margin: 0;
   background-color: rgb(0, 0, 0);
   color: #70c0e6;
 }
@@ -19,26 +22,37 @@ input, textarea {
   color: #a0e1ff;
   font-size: 1em;
 }
-
+.guidelines li {
+  padding: 5px;
+  font-size: 1.2em;
+}
 button {
   padding: 20px 20px;
   margin: 10px;
   background-color: rgb(136, 211, 255);
   color: #010e14;
-
+  font-size: 1.4em; /* Increase font size by 40% */
+  box-shadow: 0 4px 16px rgb(148, 148, 148); /* Add this line */
 }
 
 .request-card {
   border: 1px solid #ccc;
   padding: 10px;
-  margin: 10px;
+  margin: 5px;
+  width:50%;
   text-align: center;
   position: relative; /* Add this */
 }
 .request-card button {
   position: absolute;
-  top: 10px;
+  top: 4px;
   right: 10px;
+  height: 20px;
+  WIDTH:  100px;
+  background-color: rgb(134, 1, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .modal-overlay {
   position: fixed;
@@ -46,18 +60,17 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(4, 48, 73, 0.9);
+  background-color: rgba(3, 90, 141, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-content {
-  background-color: black;
-  color: #70c0e6;
-  padding: 150px;
-  border-radius: 10px;
-  width: 70%;
+  background-color: rgb(7, 83, 150);
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
   max-width: 600px;
   position: relative;
 }
@@ -102,6 +115,7 @@ button {
   height: 100vh;
 }
 
+
 .password-input {
   margin-bottom: 20px;
 }
@@ -132,4 +146,133 @@ button {
 
 .keypad button:hover {
   background-color: #ddd;
+}
+
+.modal {
+  position: fixed;
+  top:60px; /* Changed from 4% to 0 */
+  left: 0;
+  width: 100%;
+  height: 100%; /* Changed from 95% to 100% */
+
+  background-color: rgba(0, 21, 41, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center to flex-start */
+  overflow-y: auto; /* Changed from scroll to auto for vertical scrolling only */
+  padding-top: 20px; /* Add padding to ensure content isn't cut off at the top */
+
+}
+
+.modal-content {
+  background-color: rgb(3, 43, 66);
+  color: lightblue;
+  padding: 20px;
+  border-radius: 5px;
+  width: 85%;
+  min-height: 900px;
+  max-width: 1500px;
+  position: relative;
+  overflow: visible; /* Changed from auto to visible to allow content to expand */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+.modal-content button {
+  background-color: rgba(10, 127, 194, 0.842); /* Black background */
+  color: lightblue; /* Light blue font color */
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%; /* Fill 75% of the window */
+  max-width: 300px;
+  height:70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  
+}
+
+.modal-content input {
+  background-color: rgba(3, 3, 3, 0.842); /* Black background */
+  color: lightblue; /* Light blue font color */
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%; /* Fill 75% of the window */
+  max-width: 300px;
+  height:70px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative; /* Ensure relative positioning */
+  padding: 10px;
+
+  overflow: scroll
+}
+
+.modal-content button.continue-button {
+  margin-top: 60px;
+  background-color: rgb(0, 88, 0);
+
+}
+
+
+.modal-confirm {
+  background-color: rgba(0, 0, 0, 0.959);
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width:1200px;
+  position: relative;
+  height:660px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: lightblue; /* Light blue close button */
+}
+
+button.deleteSinger {
+
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgba(179, 12, 12, 0.842);
+  color: rgba(255, 255, 255, 0.514); /* Light blue close button */
+  margin-bottom: 20px;
+  width:160px;
+  height:60px;
+}
+
+button.deleteSinger2 {
+
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: rgba(92, 0, 0, 0.973);
+  color: rgba(255, 255, 255, 0.514); /* Light blue close button */
+  margin-bottom: 20px;
+  width:360px;
+  height:30px;
+}
+
+.songRec {
+  font-size: 1.3em;
+  margin-bottom: 18px;
 }

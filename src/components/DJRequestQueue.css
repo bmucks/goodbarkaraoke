@@ -2,17 +2,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-left: 15px;
+  width:90%;
+  height: 85%;
+  
 }
+
 
 .request-card {
   flex: 0 0 48%; /* Adjust the width to fit two columns with some space between */
   box-sizing: border-box;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 20px;
   margin: 10px 0;
-  text-align: left;
+  font-size: 1.2em;
+align-items: center;
+  text-align: center;
 }
 
+.deleteCard{
+  position: absolute;
+  font-size: 1.2em;
+align-items: right;
+  text-align: center;
+  display: flex;
+  height: 441px;
+ 
+}
 .copy-box {
   cursor: pointer;
   padding: 2px 5px;
@@ -31,4 +47,9 @@
   .request-card {
     flex: 0 0 100%; /* Stack cards on smaller screens */
   }
+}
+
+.requests-container textarea {
+
+  font-size: 1.6em;
 }
