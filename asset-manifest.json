@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/bmucks/goodbarkaraoke/static/css/main.922d3552.css",
+    "main.js": "/bmucks/goodbarkaraoke/static/js/main.3fe83730.js",
+    "static/js/453.7580d053.chunk.js": "/bmucks/goodbarkaraoke/static/js/453.7580d053.chunk.js",
+    "static/media/logo.jpg": "/bmucks/goodbarkaraoke/static/media/logo.001e1f8bdbd9227a0480.jpg",
+    "index.html": "/bmucks/goodbarkaraoke/index.html",
+    "main.922d3552.css.map": "/bmucks/goodbarkaraoke/static/css/main.922d3552.css.map",
+    "main.3fe83730.js.map": "/bmucks/goodbarkaraoke/static/js/main.3fe83730.js.map",
+    "453.7580d053.chunk.js.map": "/bmucks/goodbarkaraoke/static/js/453.7580d053.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.922d3552.css",
+    "static/js/main.3fe83730.js"
+  ]
+}
